@@ -34,7 +34,7 @@ export async function addExpense(data: {
   }
 
   // ページを再検証してデータを更新
-  revalidatePath("/protected");
+  revalidatePath("/");
 
   return { success: true };
 }
